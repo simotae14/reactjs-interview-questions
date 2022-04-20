@@ -354,7 +354,9 @@ You can download the PDF and Epub version of this repository from the latest run
     
 1. ### What is React?
 
-    React is an **open-source front-end JavaScript library** that is used for building user interfaces, especially for single-page applications. It is used for handling view layer for web and mobile apps. React was created by [Jordan Walke](https://github.com/jordwalke), a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.
+    React is an **open-source front-end JavaScript library** that is used for building user interfaces, especially for single-page applications (SPA). It is used for handling view layer for web and mobile apps. React was created by [Jordan Walke](https://github.com/jordwalke), a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.
+    
+    Libreria UI per SPA
 
 
    **[⬆ Back to Top](#table-of-contents)**
@@ -373,7 +375,7 @@ You can download the PDF and Epub version of this repository from the latest run
     
 3. ### What is JSX?
 
-    *JSX* is a XML-like syntax extension to ECMAScript (the acronym stands for *JavaScript XML*). Basically it just provides syntactic sugar for the `React.createElement()` function, giving us expressiveness of JavaScript along with HTML like template syntax.
+    *JSX* is a XML-like syntax extension to ECMAScript (the acronym stands for *JavaScript XML*). Basically it just provides syntactic sugar for the `React.createElement()` function.
 
     In the example below text inside `<h1>` tag is returned as JavaScript function to the render function.
 
@@ -394,7 +396,7 @@ You can download the PDF and Epub version of this repository from the latest run
     
 4. ### What is the difference between Element and Component?
 
-    An *Element* is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. *Elements* can contain other *Elements* in their props. Creating a React element is cheap. Once an element is created, it is never mutated.
+    An *Element* is a plain object (oggetto semplice) describing what you want to appear on the screen in terms of the DOM nodes or other components. *Elements* can contain other *Elements* in their props. Creating a React element is cheap. Once an element is created, it is never mutated.
 
     The object representation of React Element would be as follows:
 
@@ -441,6 +443,7 @@ You can download the PDF and Epub version of this repository from the latest run
     )
     ```
 
+Elements creati con createElement mentre Component sono classi o funzioni
 
    **[⬆ Back to Top](#table-of-contents)**
     
@@ -481,7 +484,8 @@ You can download the PDF and Epub version of this repository from the latest run
     
 7. ### What are Pure Components?
 
-    *`React.PureComponent`* is exactly the same as *`React.Component`* except that it handles the `shouldComponentUpdate()` method for you. When props or state changes, *PureComponent* will do a shallow comparison on both props and state. *Component* on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever `shouldComponentUpdate` is called.
+    *`React.PureComponent`* is exactly the same as *`React.Component`* except that it handles the `shouldComponentUpdate()` method for you. 
+    When props or state changes, *PureComponent* will do a shallow comparison on both props and state. *Component* on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever `shouldComponentUpdate` is called.
 
 
    **[⬆ Back to Top](#table-of-contents)**
